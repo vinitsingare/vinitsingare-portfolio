@@ -20,13 +20,14 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    title: "Advanced E-Commerce REST API",
+    title: "Microservice E-Commerce Platform",
     problem:
-      "Developing a secure, enterprise-ready backend for e-commerce that handles complex workflows like persistent carts and secure global payments.",
+      "Monolithic e-commerce apps become unmaintainable at scale. Services need independent deployment, scaling, and fault isolation.",
     solution:
-      "Built a comprehensive REST API using Spring Boot 3 and PostgreSQL. Implemented JWT-based role-based access control, Stripe payment gateway, and Cloudinary for automated media optimization. Features automated API documentation via Swagger.",
-    techStack: ["Spring Boot 3", "PostgreSQL", "JWT", "Stripe API", "Cloudinary", "REST API"],
-    github: "https://github.com/vinitsingare/MyeCommerceStore",
+      "Designed a microservice architecture with separate services for auth (JWT), products, orders, and payments. Implemented API gateway routing, inter-service communication, and database-per-service pattern.",
+    techStack: ["Spring Boot", "Java", "MySQL", "JWT", "Docker", "REST API"],
+    github: "https://github.com/vinitsingare/ecommerce-microservices",
+    live: "https://ecommerce-demo.example.com",
     featured: true,
   },
   {
@@ -69,11 +70,11 @@ export const projects: Project[] = [
   {
     title: "AgriChain: Blockchain Supply Chain",
     problem:
-      "Developing a transparent agricultural supply chain where consumers can verify the origin and price markups of their food products.",
+      "Lack of transparency and traceability in agricultural supply chains leads to inefficient tracking, opaque pricing, and margin manipulation.",
     solution:
-      "Built a decentralized application using Solidity smart contracts on Ethereum. Features a full farm-to-consumer workflow with real-time state tracking, immutable record-keeping, and margin transparency. Integrated Web3.js and MetaMask for direct blockchain interaction.",
-    techStack: ["Solidity", "Ethereum", "Truffle", "Web3.js", "React", "Node.js"],
-    github: "https://github.com/vinitsingare/stop2go-agrichain",
+      "Built a decentralized supply chain management system on Ethereum, enabling real-time tracking of item states, complete price transparency, and multi-role participation (Farmer, Distributor, Retailer, Consumer).",
+    techStack: ["Solidity", "React", "Node.js", "Truffle", "Web3.js", "Express"],
+    github: "https://github.com/vinitsingare/FSD-AgriChain",
     featured: true,
   },
 ];
