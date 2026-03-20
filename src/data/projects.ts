@@ -66,4 +66,14 @@ export const projects: Project[] = [
     techStack: ["Node.js", "Redis", "TypeScript", "Bull"],
     github: "https://github.com/vinitsingare/task-queue",
   },
+  {
+    title: "AgriChain: Blockchain Supply Chain",
+    problem:
+      "Developing a transparent agricultural supply chain where consumers can verify the origin and price markups of their food products.",
+    solution:
+      "Built a decentralized application using Solidity smart contracts on Ethereum. Features a full farm-to-consumer workflow with real-time state tracking, immutable record-keeping, and margin transparency. Integrated Web3.js and MetaMask for direct blockchain interaction.",
+    techStack: ["Solidity", "Ethereum", "Truffle", "Web3.js", "React", "Node.js"],
+    github: "https://github.com/vinitsingare/stop2go-agrichain",
+    featured: true,
+  },
 ];
