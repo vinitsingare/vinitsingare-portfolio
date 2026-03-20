@@ -47,7 +47,7 @@ export default function Hero() {
           <a
             href="/resume.pdf"
             target="_blank"
-            className="px-8 py-3 rounded-lg border border-[var(--color-border)] text-[var(--color-text-secondary)] font-medium hover:border-[var(--color-accent-blue)] hover:text-[var(--color-text-heading)] transition-all"
+            className="px-8 py-3 rounded-lg border border-[var(--color-border)] bg-[rgba(var(--color-accent-blue),0.05)] text-[var(--color-text-secondary)] font-medium hover:bg-[rgba(var(--color-accent-blue),0.1)] hover:border-[var(--color-accent-blue)] hover:text-[var(--color-text-heading)] transition-all"
           >
             Download Resume
           </a>
