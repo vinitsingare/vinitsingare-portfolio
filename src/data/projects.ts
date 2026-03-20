@@ -77,4 +77,13 @@ export const projects: Project[] = [
     github: "https://github.com/vinitsingare/FSD-AgriChain",
     featured: true,
   },
+  {
+    title: "PayPal Clone: Microservices Payment System",
+    problem:
+      "Traditional payment systems face challenges with horizontal scalability and real-time transaction processing at scale.",
+    solution:
+      "Engineering a high-throughput payment platform using a microservices architecture. Leveraging Kafka for event-driven transaction processing, ensuring eventual consistency and fault tolerance across distributed services.",
+    techStack: ["Java", "Spring Boot", "Kafka", "Microservices", "PostgreSQL"],
+    featured: false,
+  },
 ];
