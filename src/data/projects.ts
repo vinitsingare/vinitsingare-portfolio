@@ -20,14 +20,13 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    title: "Microservice E-Commerce Platform",
+    title: "Advanced E-Commerce REST API",
     problem:
-      "Monolithic e-commerce apps become unmaintainable at scale. Services need independent deployment, scaling, and fault isolation.",
+      "Developing a secure, enterprise-ready backend for e-commerce that handles complex workflows like persistent carts and secure global payments.",
     solution:
-      "Designed a microservice architecture with separate services for auth (JWT), products, orders, and payments. Implemented API gateway routing, inter-service communication, and database-per-service pattern.",
-    techStack: ["Spring Boot", "Java", "MySQL", "JWT", "Docker", "REST API"],
-    github: "https://github.com/vinitsingare/ecommerce-microservices",
-    live: "https://ecommerce-demo.example.com",
+      "Built a comprehensive REST API using Spring Boot 3 and PostgreSQL. Implemented JWT-based role-based access control, Stripe payment gateway, and Cloudinary for automated media optimization. Features automated API documentation via Swagger.",
+    techStack: ["Spring Boot 3", "PostgreSQL", "JWT", "Stripe API", "Cloudinary", "REST API"],
+    github: "https://github.com/vinitsingare/MyeCommerceStore",
     featured: true,
   },
   {
