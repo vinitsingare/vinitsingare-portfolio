@@ -27,12 +27,33 @@ export default function About() {
               <span className="w-2 h-2 rounded-full bg-[var(--color-accent-blue)]" />
               Who I Am
             </h3>
-            <p className="text-[var(--color-text-secondary)] leading-relaxed">
-              I&apos;m a Computer Science student who loves solving complex problems with
-              elegant solutions. I focus on understanding systems from first
-              principles — from how packets travel across networks to how
-              databases optimize queries under the hood.
-            </p>
+           <p className="text-[var(--color-text-heading)] text-lg font-medium mb-4 leading-relaxed">
+    Backend-focused engineer who enjoys building scalable systems and understanding how things work under the hood.
+  </p>
+
+  <div className="text-[var(--color-text-secondary)] leading-relaxed space-y-4 text-[15px] max-w-xl">
+    
+    <p>
+      I’m Vinit Singare, a third-year B.Tech Computer Science student specializing in Artificial Intelligence and Machine Learning. I’m deeply passionate about building real-world projects and solving complex problems through clean, scalable solutions.
+    </p>
+
+    <p>
+      My approach to engineering is rooted in first principles—I enjoy understanding how systems work internally, from how packets travel across networks to how backend services and databases operate.
+    </p>
+
+    <p>
+      I primarily work with <span className="text-[var(--color-accent-blue)] font-medium">Java, Spring Boot, and Node.js</span>, and I also explore areas like blockchain to expand my understanding of modern systems.
+    </p>
+
+    <p>
+      I’m working toward becoming a backend engineer, with strong interests in distributed systems, API design, and performance optimization. I also actively practice data structures to sharpen my problem-solving skills.
+    </p>
+
+    <p>
+      I believe the best way to learn is by building—every project is an opportunity to experiment, explore, and improve.
+    </p>
+    </div>
+
           </div>
           <div className="glass rounded-xl p-8">
             <h3 className="text-lg font-semibold text-[var(--color-text-heading)] mb-4 flex items-center gap-2">
