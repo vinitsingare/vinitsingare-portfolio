@@ -1,12 +1,23 @@
+"use client";
+
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 
 export default function Hero() {
+  const taglineRef = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    // Trigger typewriter by adding class after mount
+    const el = taglineRef.current;
+    if (!el) return;
+    const timer = setTimeout(() => el.classList.add("tw-run"), 300);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background orbs */}
-      <div className="orb w-96 h-96 bg-[var(--color-accent-blue)] top-[-10%] left-[-5%]" />
-      <div className="orb w-80 h-80 bg-[var(--color-accent-purple)] bottom-[-10%] right-[-5%]" />
-      <div className="orb w-64 h-64 bg-[var(--color-accent-cyan)] top-[40%] right-[20%] opacity-20" />
+      {/* Hero-specific grid overlay */}
+      <div className="hero-grid" />
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         {/* Badge */}
@@ -25,7 +36,7 @@ export default function Hero() {
           Backend Developer &bull; CSE Student
         </p>
 
-        {/* Tagline */}
+        {/* Tagline with typewriter */}
         <p className="animate-fade-in-up animate-delay-300 text-lg md:text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto mb-10 leading-relaxed">
           I build scalable backend systems and solve real-world problems.
         </p>
@@ -34,20 +45,25 @@ export default function Hero() {
         <div className="animate-fade-in-up animate-delay-400 flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
           <Link
             href="/projects"
-            className="px-8 py-3 rounded-lg bg-gradient-to-r from-[var(--color-accent-blue)] to-[var(--color-accent-purple)] text-white font-medium hover:opacity-90 transition-opacity"
+            className="group px-8 py-3 rounded-lg bg-gradient-to-r from-[var(--color-accent-blue)] to-[var(--color-accent-purple)] text-white font-medium transition-all hover:scale-105 hover:shadow-[0_0_28px_rgba(99,102,241,0.4)] active:scale-95"
           >
-            View Projects
+            <span className="flex items-center gap-2">
+              View Projects
+              <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </span>
           </Link>
           <Link
             href="/blog"
-            className="px-8 py-3 rounded-lg glass text-[var(--color-text-heading)] font-medium hover:bg-[rgba(var(--color-overlay),0.1)] transition-colors"
+            className="px-8 py-3 rounded-lg glass text-[var(--color-text-heading)] font-medium hover:bg-[rgba(var(--color-overlay),0.1)] transition-all hover:scale-105 active:scale-95"
           >
             Read Blog
           </Link>
           <a
             href="/resume.pdf"
             target="_blank"
-            className="px-8 py-3 rounded-lg border-2 border-[var(--color-accent-blue)] bg-[rgba(var(--color-accent-blue),0.15)] text-[var(--color-text-heading)] font-semibold hover:bg-[rgba(var(--color-accent-blue),0.25)] hover:shadow-[0_0_15px_rgba(99,102,241,0.2)] transition-all"
+            className="px-8 py-3 rounded-lg border border-[var(--color-accent-blue)] text-[var(--color-text-heading)] font-medium hover:bg-[rgba(99,102,241,0.12)] hover:scale-105 transition-all active:scale-95"
           >
             Download Resume
           </a>
@@ -59,7 +75,7 @@ export default function Hero() {
             href="https://github.com/vinitsingare"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[var(--color-text-muted)] hover:text-[var(--color-text-heading)] transition-colors"
+            className="text-[var(--color-text-muted)] hover:text-[var(--color-text-heading)] hover:scale-110 transition-all"
             aria-label="GitHub"
           >
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -70,7 +86,7 @@ export default function Hero() {
             href="https://linkedin.com/in/vinitsingare"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[var(--color-text-muted)] hover:text-[var(--color-text-heading)] transition-colors"
+            className="text-[var(--color-text-muted)] hover:text-[var(--color-text-heading)] hover:scale-110 transition-all"
             aria-label="LinkedIn"
           >
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

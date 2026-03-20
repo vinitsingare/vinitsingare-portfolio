@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ThemeProvider from "@/components/ThemeProvider";
+import AnimatedBackground from "@/components/AnimatedBackground";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -53,9 +54,15 @@ export default function RootLayout({
         className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
       >
         <ThemeProvider>
-          <Navbar />
-          <main className="min-h-screen">{children}</main>
-          <Footer />
+          {/* Global animated background — fixed, behind everything */}
+          <AnimatedBackground />
+
+          {/* All page content sits above the background */}
+          <div className="relative z-10">
+            <Navbar />
+            <main className="min-h-screen">{children}</main>
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>
