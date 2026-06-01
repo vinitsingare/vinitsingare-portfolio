@@ -32,7 +32,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="text-xl font-bold text-[var(--color-accent)]">
-          VS.
+          vinitsingare.in
         </Link>
 
         {/* Desktop Nav */}

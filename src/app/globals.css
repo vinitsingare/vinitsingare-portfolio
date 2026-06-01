@@ -1,33 +1,33 @@
 @import "tailwindcss";
 
 @theme {
-  /* ─── Dark mode (default) — Deep purple ─── */
-  --color-background: #210F37;
-  --color-surface: #2d1847;
-  --color-surface-light: #3a2258;
-  --color-border: #4a2d6a;
-  --color-text-primary: #ede6f5;
-  --color-text-secondary: #b8a5cf;
-  --color-text-muted: #8b73a8;
+  /* ─── Dark mode (default) — Dark Greenish ─── */
+  --color-background: #1B211A;
+  --color-surface: #262c25;
+  --color-surface-light: #323831;
+  --color-border: #3f453d;
+  --color-text-primary: #f2f3f0;
+  --color-text-secondary: #c0c3bd;
+  --color-text-muted: #959891;
   --color-text-heading: #ffffff;
-  --color-accent: #4F1C51;
-  --color-accent-hover: #6b2870;
+  --color-accent: #F1F3E0;
+  --color-accent-hover: #dbe0c5;
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
 }
 
-/* ─── Light mode overrides — Warm cream ─── */
+/* ─── Light mode overrides — Cyan-ish ─── */
 html[data-theme="light"] {
-  --color-background: #FFF8F0;
-  --color-surface: #fff3e6;
-  --color-surface-light: #ffe8d0;
-  --color-border: #e6cdb5;
-  --color-text-primary: #3d2b1f;
-  --color-text-secondary: #6b5344;
-  --color-text-muted: #a08a7a;
-  --color-text-heading: #2a1a0e;
-  --color-accent: #C08552;
-  --color-accent-hover: #a56f3f;
+  --color-background: #C1EBE9;
+  --color-surface: #d2f0ef;
+  --color-surface-light: #e4f6f5;
+  --color-border: #a8d5d3;
+  --color-text-primary: #1a2f2e;
+  --color-text-secondary: #3d5a59;
+  --color-text-muted: #648483;
+  --color-text-heading: #0d1e1d;
+  --color-accent: #4F252E;
+  --color-accent-hover: #6a3440;
 }
 
 /* ─── Base ─── */
@@ -206,3 +206,17 @@ html[data-theme="light"] .glass-strong {
 }
 .prose-blog hr { border-color: var(--color-border); margin: 2rem 0; }
 .prose-blog img { border-radius: 8px; margin: 1.5rem 0; }
+
+/* ─── Marquee ─── */
+@keyframes marquee {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
