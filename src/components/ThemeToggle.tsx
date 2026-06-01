@@ -9,8 +9,8 @@ export default function ThemeToggle() {
     <button
       onClick={toggleTheme}
       className="relative w-9 h-9 rounded-lg flex items-center justify-center
-        bg-[var(--color-surface-light)] border border-[var(--color-border)]
-        hover:border-[var(--color-accent-blue)] transition-all duration-300
+        bg-[var(--color-surface)] border border-[var(--color-border)]
+        hover:border-[var(--color-accent)] transition-all duration-300
         group"
       aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
       id="theme-toggle"
@@ -33,7 +33,7 @@ export default function ThemeToggle() {
 
       {/* Moon icon */}
       <svg
-        className={`w-[18px] h-[18px] absolute transition-all duration-300 text-[var(--color-accent-blue)]
+        className={`w-[18px] h-[18px] absolute transition-all duration-300 text-[var(--color-accent)]
           ${theme === "dark" ? "opacity-100 rotate-0 scale-100" : "opacity-0 -rotate-90 scale-0"}`}
         fill="none"
         viewBox="0 0 24 24"

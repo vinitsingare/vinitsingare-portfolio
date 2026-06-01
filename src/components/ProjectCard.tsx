@@ -6,7 +6,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       {/* Featured badge */}
       {project.featured && (
         <div className="mb-4">
-          <span className="text-xs px-2 py-1 rounded-full bg-[var(--color-accent-purple)]/10 text-[var(--color-accent-purple)] font-medium">
+          <span className="text-xs px-2 py-1 rounded-full bg-[var(--color-accent)]/10 text-[var(--color-accent)] font-medium">
             ★ Featured
           </span>
         </div>
@@ -19,7 +19,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 
       {/* Problem */}
       <div className="mb-4">
-        <h4 className="text-xs font-medium text-[var(--color-accent-blue)] uppercase tracking-wider mb-2">
+        <h4 className="text-xs font-medium text-[var(--color-accent)] uppercase tracking-wider mb-2">
           Problem
         </h4>
         <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
@@ -29,7 +29,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 
       {/* Solution */}
       <div className="mb-6">
-        <h4 className="text-xs font-medium text-[var(--color-accent-purple)] uppercase tracking-wider mb-2">
+        <h4 className="text-xs font-medium text-[var(--color-accent)] uppercase tracking-wider mb-2">
           Solution
         </h4>
         <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
@@ -71,7 +71,7 @@ export default function ProjectCard({ project }: { project: Project }) {
               href={project.live}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm text-[var(--color-accent-blue)] hover:text-[var(--color-accent-cyan)] transition-colors"
+              className="flex items-center gap-2 text-sm text-[var(--color-accent)] hover:text-[var(--color-accent-hover)] transition-colors"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />

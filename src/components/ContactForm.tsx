@@ -18,7 +18,7 @@ export default function ContactForm() {
             type="text"
             id="name"
             placeholder="Your name"
-            className="w-full px-4 py-3 rounded-lg bg-[rgba(var(--color-overlay),0.05)] border border-[var(--color-border)] text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent-blue)]/50 focus:border-transparent transition-all"
+            className="w-full px-4 py-3 rounded-lg bg-[rgba(var(--color-overlay),0.05)] border border-[var(--color-border)] text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]/50 focus:border-transparent transition-all"
           />
         </div>
         <div>
@@ -32,7 +32,7 @@ export default function ContactForm() {
             type="email"
             id="email"
             placeholder="your.email@example.com"
-            className="w-full px-4 py-3 rounded-lg bg-[rgba(var(--color-overlay),0.05)] border border-[var(--color-border)] text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent-blue)]/50 focus:border-transparent transition-all"
+            className="w-full px-4 py-3 rounded-lg bg-[rgba(var(--color-overlay),0.05)] border border-[var(--color-border)] text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]/50 focus:border-transparent transition-all"
           />
         </div>
         <div>
@@ -46,12 +46,12 @@ export default function ContactForm() {
             id="message"
             rows={5}
             placeholder="What's on your mind?"
-            className="w-full px-4 py-3 rounded-lg bg-[rgba(var(--color-overlay),0.05)] border border-[var(--color-border)] text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent-blue)]/50 focus:border-transparent transition-all resize-none"
+            className="w-full px-4 py-3 rounded-lg bg-[rgba(var(--color-overlay),0.05)] border border-[var(--color-border)] text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]/50 focus:border-transparent transition-all resize-none"
           />
         </div>
         <button
           type="submit"
-          className="w-full py-3 rounded-lg bg-gradient-to-r from-[var(--color-accent-blue)] to-[var(--color-accent-purple)] text-white font-medium hover:opacity-90 transition-opacity"
+          className="w-full py-3 rounded-lg bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white font-medium transition-colors"
         >
           Send Message
         </button>

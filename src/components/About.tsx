@@ -53,7 +53,7 @@ export default function About() {
             style={{ transitionDelay: "0.1s" }}
           >
             <h3 className="text-lg font-semibold text-[var(--color-text-heading)] mb-4 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-[var(--color-accent-blue)]" />
+              <span className="w-2 h-2 rounded-full bg-[var(--color-accent)]" />
               Who I Am
             </h3>
             <p className="text-[var(--color-text-heading)] text-lg font-medium mb-4 leading-relaxed">
@@ -68,7 +68,7 @@ export default function About() {
                 My approach to engineering is rooted in first principles—I enjoy understanding how systems work internally, from how packets travel across networks to how backend services and databases operate.
               </p>
               <p>
-                I primarily work with <span className="text-[var(--color-accent-blue)] font-medium">Java, Spring Boot, and Node.js</span>, and I also explore areas like blockchain to expand my understanding of modern systems.
+                I primarily work with <span className="text-[var(--color-accent)] font-medium">Java, Spring Boot, and Node.js</span>, and I also explore areas like blockchain to expand my understanding of modern systems.
               </p>
               <p>
                 I&apos;m working toward becoming a backend engineer, with strong interests in distributed systems, API design, and performance optimization.
@@ -81,7 +81,7 @@ export default function About() {
             style={{ transitionDelay: "0.2s" }}
           >
             <h3 className="text-lg font-semibold text-[var(--color-text-heading)] mb-4 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-[var(--color-accent-purple)]" />
+              <span className="w-2 h-2 rounded-full bg-[var(--color-accent)]" />
               Current Focus
             </h3>
             <ul className="space-y-3 text-[var(--color-text-secondary)]">
@@ -92,7 +92,7 @@ export default function About() {
                 "Competitive problem solving & DSA",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-2">
-                  <span className="text-[var(--color-accent-blue)] mt-1">▸</span>
+                  <span className="text-[var(--color-accent)] mt-1">▸</span>
                   {item}
                 </li>
               ))}
@@ -112,14 +112,14 @@ export default function About() {
                 className="about-reveal reveal-scale glass rounded-xl p-6"
                 style={{ transitionDelay: `${0.1 + i * 0.1}s` }}
               >
-                <h4 className="text-sm font-medium text-[var(--color-accent-blue)] uppercase tracking-wider mb-4">
+                <h4 className="text-sm font-medium text-[var(--color-accent)] uppercase tracking-wider mb-4">
                   {category}
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {items.map((item) => (
                     <span
                       key={item}
-                      className="px-3 py-1 rounded-full text-xs font-medium bg-[rgba(var(--color-overlay),0.05)] text-[var(--color-text-secondary)] border border-[rgba(var(--color-overlay),0.05)] hover:border-[var(--color-accent-blue)] hover:text-[var(--color-text-heading)] transition-all cursor-default"
+                      className="px-3 py-1 rounded-full text-xs font-medium bg-[rgba(var(--color-overlay),0.05)] text-[var(--color-text-secondary)] border border-[rgba(var(--color-overlay),0.05)] hover:border-[var(--color-accent)] hover:text-[var(--color-text-heading)] transition-all cursor-default"
                     >
                       {item}
                     </span>

@@ -30,7 +30,7 @@ export default function FeaturedBlogs() {
                 <span>&bull;</span>
                 <span>{post.readingTime} min read</span>
               </div>
-              <h3 className="text-lg font-semibold text-[var(--color-text-heading)] mb-3 group-hover:text-[var(--color-accent-blue)] transition-colors">
+              <h3 className="text-lg font-semibold text-[var(--color-text-heading)] mb-3 group-hover:text-[var(--color-accent)] transition-colors">
                 {post.title}
               </h3>
               <p className="text-[var(--color-text-secondary)] text-sm leading-relaxed mb-4">
@@ -40,7 +40,7 @@ export default function FeaturedBlogs() {
                 {post.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs px-2 py-1 rounded-full bg-[var(--color-accent-blue)]/10 text-[var(--color-accent-blue)]"
+                    className="text-xs px-2 py-1 rounded-full bg-[var(--color-accent)]/10 text-[var(--color-accent)]"
                   >
                     #{tag}
                   </span>
@@ -53,7 +53,7 @@ export default function FeaturedBlogs() {
         <div className="text-center mt-10">
           <Link
             href="/blog"
-            className="text-[var(--color-accent-blue)] hover:underline font-medium"
+            className="text-[var(--color-accent)] hover:underline font-medium"
           >
             View all articles →
           </Link>

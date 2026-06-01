@@ -69,7 +69,7 @@ export default async function BlogPostPage({ params }: Props) {
             {post.tags.map((tag) => (
               <span
                 key={tag}
-                className="text-xs px-3 py-1 rounded-full bg-[var(--color-accent-blue)]/10 text-[var(--color-accent-blue)]"
+                className="text-xs px-3 py-1 rounded-full bg-[var(--color-accent)]/10 text-[var(--color-accent)]"
               >
                 #{tag}
               </span>
@@ -94,7 +94,7 @@ export default async function BlogPostPage({ params }: Props) {
             </p>
             <Link
               href="/blog"
-              className="px-6 py-2.5 rounded-lg bg-gradient-to-r from-[var(--color-accent-blue)] to-[var(--color-accent-purple)] text-white font-medium hover:opacity-90 transition-opacity"
+              className="px-6 py-2.5 rounded-lg bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-white font-medium transition-colors"
             >
               Read More Articles
             </Link>

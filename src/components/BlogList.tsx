@@ -48,7 +48,7 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
             placeholder="Search articles..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full pl-12 pr-4 py-3 rounded-xl glass text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent-blue)]/50 transition-all"
+            className="w-full pl-12 pr-4 py-3 rounded-xl glass text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]/50 transition-all"
           />
         </div>
       </div>
@@ -59,7 +59,7 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
           onClick={() => setActiveTag(null)}
           className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
             !activeTag
-              ? "bg-[var(--color-accent-blue)] text-white"
+              ? "bg-[var(--color-accent)] text-white"
               : "bg-[rgba(var(--color-overlay),0.05)] text-[var(--color-text-secondary)] hover:bg-[rgba(var(--color-overlay),0.1)]"
           }`}
         >
@@ -71,7 +71,7 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
             onClick={() => setActiveTag(activeTag === tag ? null : tag)}
             className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
               activeTag === tag
-                ? "bg-[var(--color-accent-blue)] text-white"
+                ? "bg-[var(--color-accent)] text-white"
                 : "bg-[rgba(var(--color-overlay),0.05)] text-[var(--color-text-secondary)] hover:bg-[rgba(var(--color-overlay),0.1)]"
             }`}
           >
@@ -102,7 +102,7 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
                     <span>&bull;</span>
                     <span>{post.readingTime} min read</span>
                   </div>
-                  <h3 className="text-lg font-semibold text-[var(--color-text-heading)] mb-2 group-hover:text-[var(--color-accent-blue)] transition-colors">
+                  <h3 className="text-lg font-semibold text-[var(--color-text-heading)] mb-2 group-hover:text-[var(--color-accent)] transition-colors">
                     {post.title}
                   </h3>
                   <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
@@ -113,7 +113,7 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
                   {post.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="text-xs px-2 py-1 rounded-full bg-[var(--color-accent-blue)]/10 text-[var(--color-accent-blue)]"
+                      className="text-xs px-2 py-1 rounded-full bg-[var(--color-accent)]/10 text-[var(--color-accent)]"
                     >
                       #{tag}
                     </span>
