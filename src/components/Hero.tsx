@@ -61,7 +61,7 @@ export default function Hero() {
             Read Blog
           </Link>
           <a
-            href="/resume.pdf"
+            href="/VinitSingare-Resume.pdf"
             target="_blank"
             className="px-8 py-3 rounded-lg border border-[var(--color-accent-blue)] text-[var(--color-text-heading)] font-medium hover:bg-[rgba(99,102,241,0.12)] hover:scale-105 transition-all active:scale-95"
           >
