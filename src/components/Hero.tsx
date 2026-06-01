@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="flex flex-col-reverse md:flex-row items-center gap-12 md:gap-16">
           {/* Left — Photo */}
           <div className="animate-fade-in-up flex-shrink-0">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-2 border-[var(--color-border)] shadow-lg">
+            <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-2 border-[var(--color-border)] shadow-lg">
               <Image
                 src="/vinit.jpeg"
                 alt="Vinit Singare"
