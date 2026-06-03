@@ -1,4 +1,9 @@
-
+---
+title: "Your Model Has 95% Accuracy. So Why Is It Failing?"
+date: "2026-06-03"
+tags: ["machinelearning", "deeplearning", "ai", "debugging"]
+description: "Your model can achieve outstanding accuracy and still fail in production. This article dives into one of the most overlooked reasons: spurious correlations—the hidden shortcuts that models mistake for knowledge."
+---
 
 One of the most dangerous assumptions in machine learning is believing that high accuracy means the model has learned the right thing.
 
