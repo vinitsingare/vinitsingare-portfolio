@@ -5,7 +5,7 @@ tags: ["machinelearning", "deeplearning", "ai", "debugging"]
 description: "Your model can achieve outstanding accuracy and still fail in production. This article dives into one of the most overlooked reasons: spurious correlations—the hidden shortcuts that models mistake for knowledge."
 ---
 
-One of the most dangerous assumptions in machine learning is believing that high accuracy means the model has learned the right thing.
+## One of the most dangerous assumptions in machine learning is believing that high accuracy means the model has learned the right thing.
 
 In reality, a model can achieve impressive metrics while completely misunderstanding the problem it was trained to solve.
 
